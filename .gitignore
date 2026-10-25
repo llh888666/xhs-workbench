@@ -1,0 +1,7 @@
+data/
+skill_packs/
+config.json
+dist/
+__pycache__/
+*.pyc
+releases/app-*.zip

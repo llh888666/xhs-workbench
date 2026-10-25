@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>小红书工作台</title>
+<link rel="stylesheet" href="/static/style.css" />
+<link rel="icon" href="/static/icon.png" />
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark">红</div>
+      <div class="brand-text">
+        <b>小红书工作台</b>
+        <span>XHS Workbench</span>
+      </div>
+    </div>
+
+    <nav class="nav" id="nav">
+      <a data-page="dash"><i>▦</i>概览</a>
+      <a data-page="runs"><i>◈</i>批次创作</a>
+      <a data-page="console"><i>⌨</i>复制台</a>
+      <a data-page="packs"><i>❖</i>技能包</a>
+      <a data-page="accounts"><i>◎</i>账号</a>
+      <a data-page="publish"><i>✎</i>单条发布</a>
+      <a data-page="products"><i>▣</i>商品</a>
+      <a data-page="delivery"><i>✦</i>卡密发货</a>
+      <a data-page="tasks"><i>≣</i>任务</a>
+      <a data-page="settings"><i>⚙</i>设置</a>
+    </nav>
+
+    <div class="side-foot">
+      <div class="dot-row"><span class="dot" id="healthDot"></span><span id="healthText">正在连接…</span></div>
+      <div class="ver">本地运行 · 数据不出机</div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div>
+        <h1 id="pageTitle">概览</h1>
+        <p id="pageSub">工作台运行状态一览</p>
+      </div>
+      <div class="top-actions">
+        <button class="btn ghost" id="btnPause" title="暂停所有批次与任务">暂停</button>
+        <button class="btn ghost" id="btnRefresh">刷新</button>
+      </div>
+    </header>
+
+    <section id="view" class="view"></section>
+  </main>
+</div>
+
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal" id="modal">
+    <div class="modal-head">
+      <b id="modalTitle">详情</b>
+      <button class="btn tiny ghost" id="modalClose">✕</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<div class="toast-wrap" id="toastWrap"></div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

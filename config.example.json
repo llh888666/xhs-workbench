@@ -1,0 +1,11 @@
+{
+  "port": 8788,
+  "node_exe": "",
+  "node_base": "",
+  "browser_channel": "msedge",
+  "headless": false,
+  "max_concurrent": 1,
+  "delay_min": 3,
+  "delay_max": 9,
+  "typing_delay_ms": 60
+}
