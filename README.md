@@ -31,6 +31,7 @@
 ```
 .
 ├── web/                 前端（MIT 开源，纯静态，无构建步骤）
+├── workers/             浏览器执行器（MIT 开源，选择器可自行校准）
 ├── skills_builtin/      11 个写作技能包（MIT 开源）
 ├── launcher.py          启动器（MIT 开源）
 ├── releases/            内核放这里（不提交到 git）
